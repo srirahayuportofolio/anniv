@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>4 Tahun Bersama</title>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&family=Playfair+Display&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Quicksand', sans-serif;
+      background: linear-gradient(to bottom right, #fceff9, #e0f7fa, #fdfcdc);
+      color: #333;
+      padding: 20px;
+      min-height: 100vh;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 50px;
+      animation: fadeIn 1.5s ease forwards;
+      opacity: 0;
+    }
+
+    header h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 3rem;
+      color: #9c27b0;
+      margin-bottom: 10px;
+    }
+
+    .romantic-text {
+      font-size: 1.2rem;
+      color: #555;
+      max-width: 720px;
+      margin: 0 auto;
+      font-style: italic;
+    }
+
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+      max-width: 1300px;
+      margin: 0 auto;
+    }
+
+    .photo-card {
+      background: #fff;
+      border-radius: 18px;
+      box-shadow: 0 6px 20px rgba(156, 39, 176, 0.15);
+      overflow: hidden;
+      opacity: 0;
+      transform: translateY(40px);
+      transition: all 0.6s ease;
+      border: 2px solid #f3e5f5;
+    }
+
+    /* Potret card */
+    .photo-card.portrait {
+      width: 250px;
+    }
+
+    .photo-card.portrait img {
+      width: 100%;
+      height: 375px; /* 2:3 ratio potret */
+      object-fit: cover;
+    }
+
+    /* Card ke-8 (landscape) */
+    .photo-card.landscape {
+      width: 400px;
+    }
+
+    .photo-card.landscape img {
+      width: 100%;
+      height: 250px; /* Landscape */
+      object-fit: cover;
+    }
+
+    .caption {
+      padding: 15px;
+      text-align: center;
+      font-size: 0.95rem;
+      background: linear-gradient(to right, #fff5f8, #f3e5f5);
+      color: #6a1b9a;
+    }
+
+    footer {
+      text-align: center;
+      font-size: 1.1rem;
+      margin-top: 50px;
+      color: #7b1fa2;
+      font-weight: 500;
+    }
+
+    @keyframes fadeIn {
+      to {
+        opacity: 1;
+        transform: none;
+      }
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2rem;
+      }
+
+      .photo-card {
+        width: 90% !important;
+      }
+
+      .photo-card img {
+        height: auto !important;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>hAPPY ANNIVERSARY SAYANG 14th💗</h1>
+    <p class="romantic-text">
+      Setiap momen bersamamu adalah babak dalam kisah cinta yang terus tumbuh — terima kasih telah menjadi bagian paling indah dalam hidupku.
+    </p>
+  </header>
+
+  <main class="gallery">
+    <!-- 1 -->
+    <div class="photo-card portrait">
+      <img src="https://i.ibb.co.com/2Yffx9By/IMG-20230831-WA0058.jpg"  alt="Moment 1">
+      <p class="caption">Hari pertama kita berbicara — dan aku tahu, kamu akan berarti.</p>
+    </div>
+
+    <!-- 2 -->
+    <div class="photo-card portrait">
+      <img src="https://i.ibb.co.com/b5DJjmdM/IMG-20231005-190345.jpg"  alt="Moment 2">
+      <p class="caption">Tertawa bersama di tempat sederhana, tapi hati terasa penuh.</p>
+    </div>
+
+    <!-- 3 -->
+    <div class="photo-card portrait">
+      <img src="https://i.ibb.co.com/Lh6Y9zLw/IMG20240518172356.jpg"  alt="Moment 3">
+      <p class="caption">Kita menua bersama — perlahan, tapi pasti.</p>
+    </div>
+
+    <!-- 4 -->
+    <div class="photo-card portrait">
+      <img src="https://i.ibb.co.com/3y5HL8fx/IMG-20241028-WA0042.jpg"  alt="Moment 4">
+      <p class="caption">Senyummu adalah rumah terbaik yang pernah aku kenal.</p>
+    </div>
+
+    <!-- 5 -->
+    <div class="photo-card portrait">
+      <img src="https://i.ibb.co.com/v6T1JW5y/IMG-20241101-175946-530.jpg"  alt="Moment 5">
+      <p class="caption">Kita berjalan bersama, tak selalu mudah, tapi tak pernah sendiri.</p>
+    </div>
+
+    <!-- 6 -->
+    <div class="photo-card portrait">
+      <img src="https://i.ibb.co.com/KQpYg9L/IMG20241108170655.jpg"  alt="Moment 6">
+      <p class="caption">Tatapanmu membuat dunia berhenti sejenak.</p>
+    </div>
+
+    <!-- 7 -->
+    <div class="photo-card portrait">
+      <img src="https://i.ibb.co.com/d0N8qVH8/IMG-20241110-213436-0492.jpg"  alt="Moment 7">
+      <p class="caption">Di antara banyak orang, kamu selalu yang paling aku cari.</p>
+    </div>
+
+    <!-- 8 - LANDSCAPE -->
+    <div class="photo-card landscape">
+      <img src="https://i.ibb.co.com/zVCjHdWC/1731843024366.jpg"  alt="Moment 8">
+      <p class="caption">Perjalanan jauh bersama, hanya kita berdua dan langit yang tahu.</p>
+    </div>
+
+    <!-- 9 -->
+    <div class="photo-card portrait">
+      <img src="https://i.ibb.co.com/jkVgDLCv/IMG20240830162727.jpg"  alt="Moment 9">
+      <p class="caption">Bersamamu, hal-hal kecil menjadi luar biasa.</p>
+    </div>
+
+    <!-- 10 -->
+    <div class="photo-card portrait">
+      <img src="https://i.ibb.co.com/d4HvLhKR/IMG-20250801-09415847.jpg"  alt="Moment 10">
+      <p class="caption">Hari-hari melelahkan pun terasa ringan saat ada kamu.</p>
+    </div>
+
+    <!-- 11 -->
+    <div class="photo-card portrait">
+      <img src="https://i.ibb.co.com/zhd53ZPT/IMG-20250721-18273468.jpg"  alt="Moment 11">
+      <p class="caption">Empat tahun ini hanyalah awal dari segalanya yang lebih indah.</p>
+    </div>
+  </main>
+
+  <footer>
+    Terima kasih telah menjadi seseorang yang membuat hidupku lebih berarti. Aku sayang kamu.
+  </footer>
+
+  <script>
+    window.addEventListener('load', () => {
+      const cards = document.querySelectorAll('.photo-card');
+      cards.forEach((card, i) => {
+        setTimeout(() => {
+          card.style.opacity = 1;
+          card.style.transform = 'translateY(0)';
+        }, i * 200);
+      });
+    });
+  </script>
+
+</body>
+</html>
