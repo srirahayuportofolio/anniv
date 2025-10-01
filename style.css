@@ -1,119 +1,115 @@
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
+/* style.css */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-    body {
-      font-family: 'Quicksand', sans-serif;
-      background: linear-gradient(to bottom right, #fceff9, #e0f7fa, #fdfcdc);
-      color: #333;
-      padding: 20px;
-      min-height: 100vh;
-    }
+body {
+  font-family: 'Quicksand', sans-serif;
+  background: linear-gradient(to bottom right, #fceff9, #e0f7fa, #fdfcdc);
+  color: #333;
+  padding: 20px;
+  min-height: 100vh;
+}
 
-    header {
-      text-align: center;
-      margin-bottom: 50px;
-      animation: fadeIn 1.5s ease forwards;
-      opacity: 0;
-    }
+header {
+  text-align: center;
+  margin-bottom: 50px;
+  animation: fadeIn 1.5s ease forwards;
+  opacity: 0;
+}
 
-    header h1 {
-      font-family: 'Playfair Display', serif;
-      font-size: 3rem;
-      color: #9c27b0;
-      margin-bottom: 10px;
-    }
+header h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 3rem;
+  color: #9c27b0;
+  margin-bottom: 10px;
+}
 
-    .romantic-text {
-      font-size: 1.2rem;
-      color: #555;
-      max-width: 720px;
-      margin: 0 auto;
-      font-style: italic;
-    }
+.romantic-text {
+  font-size: 1.2rem;
+  color: #555;
+  max-width: 720px;
+  margin: 0 auto;
+  font-style: italic;
+}
 
-    .gallery {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 30px;
-      max-width: 1300px;
-      margin: 0 auto;
-    }
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  max-width: 1300px;
+  margin: 0 auto;
+}
 
-    .photo-card {
-      background: #fff;
-      border-radius: 18px;
-      box-shadow: 0 6px 20px rgba(156, 39, 176, 0.15);
-      overflow: hidden;
-      opacity: 0;
-      transform: translateY(40px);
-      transition: all 0.6s ease;
-      border: 2px solid #f3e5f5;
-    }
+.photo-card {
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 6px 20px rgba(156, 39, 176, 0.15);
+  overflow: hidden;
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.6s ease;
+  border: 2px solid #f3e5f5;
+}
 
-    /* Potret card */
-    .photo-card.portrait {
-      width: 250px;
-    }
+.photo-card.portrait {
+  width: 250px;
+}
 
-    .photo-card.portrait img {
-      width: 100%;
-      height: 375px; /* 2:3 ratio potret */
-      object-fit: cover;
-    }
+.photo-card.portrait img {
+  width: 100%;
+  height: 375px;
+  object-fit: cover;
+}
 
-    /* Card ke-8 (landscape) */
-    .photo-card.landscape {
-      width: 400px;
-    }
+.photo-card.landscape {
+  width: 400px;
+}
 
-    .photo-card.landscape img {
-      width: 100%;
-      height: 250px; /* Landscape */
-      object-fit: cover;
-    }
+.photo-card.landscape img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
 
-    .caption {
-      padding: 15px;
-      text-align: center;
-      font-size: 0.95rem;
-      background: linear-gradient(to right, #fff5f8, #f3e5f5);
-      color: #6a1b9a;
-    }
+.caption {
+  padding: 15px;
+  text-align: center;
+  font-size: 0.95rem;
+  background: linear-gradient(to right, #fff5f8, #f3e5f5);
+  color: #6a1b9a;
+}
 
-    footer {
-      text-align: center;
-      font-size: 1.1rem;
-      margin-top: 50px;
-      color: #7b1fa2;
-      font-weight: 500;
-    }
+footer {
+  text-align: center;
+  font-size: 1.1rem;
+  margin-top: 50px;
+  color: #7b1fa2;
+  font-weight: 500;
+}
 
-    @keyframes fadeIn {
-      to {
-        opacity: 1;
-        transform: none;
-      }
-    }
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
 
-    @media (max-width: 600px) {
-      header h1 {
-        font-size: 2rem;
-      }
+@media (max-width: 600px) {
+  header h1 {
+    font-size: 2rem;
+  }
 
-      .photo-card {
-        width: 90% !important;
-      }
+  .photo-card {
+    width: 90% !important;
+  }
 
-      .photo-card img {
-        height: auto !important;
-      }
-    }
-  </style>
-</head>
-<body>
+  .photo-card img {
+    height: auto !important;
+  }
+}
+
 
